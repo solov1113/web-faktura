@@ -3,17 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
-
-
-    <!-- po zmianach tu restartujemy serwer! na dole update tomcat server -->
     
     <servlet>
         <servlet-name>login</servlet-name> <!-- nazwa serwletu -->
         <servlet-class>webapp.login</servlet-class> <!-- nazwa klasy -->
     </servlet>
     <servlet-mapping> <!-- mapowanie serwleta -->
-        <servlet-name>login</servlet-name> <!-- nazwa -->
-        <url-pattern>/login</url-pattern> <!-- adres url na co ma mapować -->
+        <servlet-name>login</servlet-name>
+        <url-pattern>/login</url-pattern>
     </servlet-mapping>
 
     <servlet>
