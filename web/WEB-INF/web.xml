@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+
+    <!-- po zmianach tu restartujemy serwer! na dole update tomcat server -->
+    
+    <servlet>
+        <servlet-name>login</servlet-name> <!-- nazwa serwletu -->
+        <servlet-class>webapp.login</servlet-class> <!-- nazwa klasy -->
+    </servlet>
+    <servlet-mapping> <!-- mapowanie serwleta -->
+        <servlet-name>login</servlet-name> <!-- nazwa -->
+        <url-pattern>/login</url-pattern> <!-- adres url na co ma mapować -->
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Pulpit</servlet-name>
+        <servlet-class>servlets.Pulpit</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Pulpit</servlet-name>
+        <url-pattern>/Pulpit</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Klienci</servlet-name>
+        <servlet-class>servlets.Klienci</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Klienci</servlet-name>
+        <url-pattern>/Klienci</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insertKlient</servlet-name>
+        <servlet-class>servlets.insertKlient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertKlient</servlet-name>
+        <url-pattern>/insertKlient</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteKlient</servlet-name>
+        <servlet-class>servlets.deleteKlient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteKlient</servlet-name>
+        <url-pattern>/deleteKlient</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateKlient</servlet-name>
+        <servlet-class>servlets.updateKlient</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateKlient</servlet-name>
+        <url-pattern>/updateKlient</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Produkty</servlet-name>
+        <servlet-class>servlets.Produkty</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Produkty</servlet-name>
+        <url-pattern>/Produkty</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insertProdukt</servlet-name>
+        <servlet-class>servlets.insertProdukt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertProdukt</servlet-name>
+        <url-pattern>/insertProdukt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteProdukt</servlet-name>
+        <servlet-class>servlets.deleteProdukt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteProdukt</servlet-name>
+        <url-pattern>/deleteProdukt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>updateProdukt</servlet-name>
+        <servlet-class>servlets.updateProdukt</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>updateProdukt</servlet-name>
+        <url-pattern>/updateProdukt</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Faktury</servlet-name>
+        <servlet-class>servlets.Faktury</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Faktury</servlet-name>
+        <url-pattern>/Faktury</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insertFaktura</servlet-name>
+        <servlet-class>servlets.insertFaktura</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertFaktura</servlet-name>
+        <url-pattern>/insertFaktura</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteFaktura</servlet-name>
+        <servlet-class>servlets.deleteFaktura</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteFaktura</servlet-name>
+        <url-pattern>/deleteFaktura</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FakturaSzczegoly</servlet-name>
+        <servlet-class>servlets.FakturaSzczegoly</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FakturaSzczegoly</servlet-name>
+        <url-pattern>/FakturaSzczegoly</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insertFakturaSzczegoly</servlet-name>
+        <servlet-class>servlets.insertFakturaSzczegoly</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertFakturaSzczegoly</servlet-name>
+        <url-pattern>/insertFakturaSzczegoly</url-pattern>
+    </servlet-mapping>
+    
+</web-app>
